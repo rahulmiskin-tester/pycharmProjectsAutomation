@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.2 on win32)" generated="2025-06-21T00:38:29.804134" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\Users\Admin\PycharmProjectsAutomation\TestCases\TC1.robot">
+<test id="s1-t1" name="LoginTest" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-21T00:38:30.006754" level="INFO">Opening browser 'Chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<arg>https://demo.nopcommerce.com</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-21T00:38:30.006496" elapsed="5.730792"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-06-21T00:38:35.738042" elapsed="0.000609"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-21T00:38:35.739965" level="INFO">Clicking element '//ul[contains(@class,'top-menu notmobil')]/li/a[contains(.,"Comp")]'.</msg>
+<arg>//ul[contains(@class,'top-menu notmobil')]/li/a[contains(.,"Comp")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-21T00:38:35.739064" elapsed="10.446187"/>
+</kw>
+<status status="PASS" start="2025-06-21T00:38:30.005304" elapsed="16.180723"/>
+</test>
+<status status="PASS" start="2025-06-21T00:38:29.805193" elapsed="16.382818"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC1" id="s1" pass="1" fail="0" skip="0">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
