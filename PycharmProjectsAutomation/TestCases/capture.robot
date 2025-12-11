@@ -14,3 +14,4 @@ Screenshot
     Capture Element Screenshot     img alt//[@aria-label="OrangeHRM home"]          imagei.pmg
 
    Capture Page Screenshot     Rahul.png
+   dfghj
