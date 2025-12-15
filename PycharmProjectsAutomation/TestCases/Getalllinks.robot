@@ -14,6 +14,8 @@ Getlinktest
     ${alllinks}=    Get WebElements    xpath=//a
     ${alllinkscount}=    Get Length    ${alllinks}
     Log To Console    Total links found: ${alllinkscount}
+    Go To    https://demo.nopcommerce.com/
+
 
     FOR    ${i}    IN RANGE    1    ${alllinkscount}
         ${linktext}=    Get Text    xpath=(//a)[${i}]
