@@ -24,6 +24,6 @@ Login
     
     Unselect Checkbox    checkBoxOption3
     Select Checkbox    option2
-    udjdbdudrado
+    rahul
 
 *** Keywords ***
