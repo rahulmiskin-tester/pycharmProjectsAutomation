@@ -24,6 +24,7 @@ testcase
     #Click Element    //button[contains(@class,"headBtn next-btn-hmevt mb-3")]
     Click Element    //label[contains(@class,"option option-2")]
     Click Element    //button[contains(.,' NEXT ')]
+    vbnm
    
 
 
