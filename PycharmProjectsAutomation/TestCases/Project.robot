@@ -58,4 +58,4 @@ Bajaj iSecure Premium Calculation Test
 #
 #    Sleep    5
 #    Capture Page Screenshot
-#    Close Browser
+    Close Browser
