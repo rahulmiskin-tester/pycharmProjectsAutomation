@@ -11,7 +11,8 @@ testcase
 
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
-    Input Text    //input[contains(@id,'mat-input-0')]    01/01/2003
+    Input Text    //input[contains(@id,'mat-input-0')]//div[contains(@class,"mat-form-field-infix ng-tns-c15-0")]    01/01/2003
+    #or
     Input Text    //input[contains(@name,'FullName')]   text   baju
     sleep  5
    Input Text   //input[@name="phoneNumber"]        9028940627
