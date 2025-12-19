@@ -15,7 +15,7 @@ Handling Dropdown and List
     Select From List By Index     //select[@id='dropdown-class-example']  3
     Sleep    1s
     Close Browser
-    ghh
+
 
     #List box
     
