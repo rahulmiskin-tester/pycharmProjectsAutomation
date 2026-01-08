@@ -1,28 +1,399 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.1 (Python 3.13.2 on win32)" generated="2025-06-21T00:38:29.804134" rpa="false" schemaversion="5">
-<suite id="s1" name="TC1" source="C:\Users\Admin\PycharmProjectsAutomation\TestCases\TC1.robot">
-<test id="s1-t1" name="LoginTest" line="7">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-08T22:40:42.539280" rpa="false" schemaversion="5">
+<suite id="s1" name="Practice" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\practice.robot">
+<test id="s1-t1" name="practice" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-21T00:38:30.006754" level="INFO">Opening browser 'Chrome' to base url 'https://demo.nopcommerce.com'.</msg>
-<arg>https://demo.nopcommerce.com</arg>
-<arg>Chrome</arg>
+<msg time="2026-01-08T22:40:42.971588" level="INFO">Opening browser 'chrome' to base url 'https://www.bajajlifeinsurance.com/buy-online/isecure'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-21T00:38:30.006496" elapsed="5.730792"/>
+<status status="PASS" start="2026-01-08T22:40:42.971347" elapsed="5.820259"/>
 </kw>
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>3s</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-06-21T00:38:35.738042" elapsed="0.000609"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-08T22:40:48.800931" elapsed="0.034370"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//input[contains(@type,"text")]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-08T22:40:48.835644" elapsed="0.024553"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:48.860699" level="INFO">Typing text 'Rahul' into text field '//input[contains(@name,'Email')]'.</msg>
+<arg>//input[contains(@name,'Email')]</arg>
+<arg>Rahul</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T22:40:48.860506" elapsed="0.145351"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.006465" elapsed="0.001680"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.009030" level="INFO">Clicking button '//button[contains(text(), ' NEXT ')]'.</msg>
+<arg>//button[contains(text(), ' NEXT ')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.008622" elapsed="0.120392"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.129433" level="INFO">Typing text 'tex' into text field '//input[contains(@name,"FullName")]'.</msg>
+<arg>//input[contains(@name,"FullName")]</arg>
+<arg>tex</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.129265" elapsed="0.080104"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-21T00:38:35.739965" level="INFO">Clicking element '//ul[contains(@class,'top-menu notmobil')]/li/a[contains(.,"Comp")]'.</msg>
-<arg>//ul[contains(@class,'top-menu notmobil')]/li/a[contains(.,"Comp")]</arg>
+<msg time="2026-01-08T22:40:49.209918" level="INFO">Clicking element '//label[contains(@class,"option option-1")][1]'.</msg>
+<arg>//label[contains(@class,"option option-1")][1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-21T00:38:35.739064" elapsed="10.446187"/>
+<status status="PASS" start="2026-01-08T22:40:49.209731" elapsed="0.067785"/>
 </kw>
-<status status="PASS" start="2025-06-21T00:38:30.005304" elapsed="16.180723"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.278128" level="INFO">Clicking element '//label[contains(@for,"smokeChewNo")]'.</msg>
+<arg>//label[contains(@for,"smokeChewNo")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.277869" elapsed="0.055701"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.334248" level="INFO">Executing JavaScript:
+window.scrollBy(0,500)
+Without any arguments.</msg>
+<arg>window.scrollBy(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.333886" elapsed="0.007119"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.341579" level="INFO">Clicking button '//button[contains(@class,"headBtn next-btn-hmevt mb-3")]'.</msg>
+<arg>//button[contains(@class,"headBtn next-btn-hmevt mb-3")]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.341390" elapsed="0.072759"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.577472" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-08T22:40:49.577866" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //button[contains(@type"button")]//parent::div[contains(@class,"mt-2 col-md-12")] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//button[contains(@type"button")]//parent::div[contains(@class,"mt-2 col-md-12")]' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6836e88d5
+	0x7ff6836e8930
+	0x7ff6834c165d
+	0x7ff6834c92cc
+	0x7ff6834cc3b4
+	0x7ff6834cc47f
+	0x7ff6835192e5
+	0x7ff683519d3c
+	0x7ff68356df97
+	0x7ff68356ac97
+	0x7ff68350ac29
+	0x7ff68350ba93
+	0x7ff683a00620
+	0x7ff6839faf60
+	0x7ff683a196c6
+	0x7ff683705dd4
+	0x7ff68370ed7c
+	0x7ff6836f1ff4
+	0x7ff6836f21a5
+	0x7ff6836d7ed2
+	0x7ff915f9e8d7
+	0x7ff9178cc53c
+</msg>
+<arg>//button[contains(@type"button")]//parent::div[contains(@class,"mt-2 col-md-12")]</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="FAIL" start="2026-01-08T22:40:49.414586" elapsed="0.198123">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //button[contains(@type"button")]//parent::div[contains(@class,"mt-2 col-md-12")] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//button[contains(@type"button")]//parent::div[contains(@class,"mt-2 col-md-12")]' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6836e88d5
+	0x7ff6836e8930
+	0x7ff6834c165d
+	0x7ff6834c92cc
+	0x7ff6834cc3b4
+	0x7ff6834cc47f
+	0x7ff6835192e5
+	0x7ff683519d3c
+	0x7ff68356df97
+	0x7ff68356ac97
+	0x7ff68350ac29
+	0x7ff68350ba93
+	0x7ff683a00620
+	0x7ff6839faf60
+	0x7ff683a196c6
+	0x7ff683705dd4
+	0x7ff68370ed7c
+	0x7ff6836f1ff4
+	0x7ff6836f21a5
+	0x7ff6836d7ed2
+	0x7ff915f9e8d7
+	0x7ff9178cc53c
+</status>
+</kw>
+<status status="FAIL" start="2026-01-08T22:40:49.414457" elapsed="0.198565">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //button[contains(@type"button")]//parent::div[contains(@class,"mt-2 col-md-12")] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//button[contains(@type"button")]//parent::div[contains(@class,"mt-2 col-md-12")]' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6836e88d5
+	0x7ff6836e8930
+	0x7ff6834c165d
+	0x7ff6834c92cc
+	0x7ff6834cc3b4
+	0x7ff6834cc47f
+	0x7ff6835192e5
+	0x7ff683519d3c
+	0x7ff68356df97
+	0x7ff68356ac97
+	0x7ff68350ac29
+	0x7ff68350ba93
+	0x7ff683a00620
+	0x7ff6839faf60
+	0x7ff683a196c6
+	0x7ff683705dd4
+	0x7ff68370ed7c
+	0x7ff6836f1ff4
+	0x7ff6836f21a5
+	0x7ff6836d7ed2
+	0x7ff915f9e8d7
+	0x7ff9178cc53c
+</status>
+</branch>
+<branch type="EXCEPT">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.829921" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.613512" elapsed="0.216580"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>NO exception</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.830345" elapsed="0.000954"/>
+</kw>
+<status status="PASS" start="2026-01-08T22:40:49.613228" elapsed="0.218241"/>
+</branch>
+<status status="PASS" start="2026-01-08T22:40:49.414394" elapsed="0.417242"/>
+</try>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.958846" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.832287" elapsed="0.126668"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.975386" level="INFO">Current page contains text 'Bajaj Life iSecure II'.</msg>
+<arg>Bajaj Life iSecure II</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.959556" elapsed="0.015984"/>
+</kw>
+<msg time="2026-01-08T22:40:49.975788" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>Bajaj Life iSecure II</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.959320" elapsed="0.016522"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-08T22:40:49.976603" level="INFO">pass</msg>
+<arg>pass</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.976517" elapsed="0.000119"/>
+</kw>
+<arg>'${status}'=='True'</arg>
+<arg>Log</arg>
+<arg>pass</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>fail</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.976284" elapsed="0.000394"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-08T22:40:49.977489" level="INFO">@{text} = [ Bajaj Life iSecure II | Calculate Benefits | Key Benefits ]</msg>
+<var>@{text}</var>
+<arg>Bajaj Life iSecure II</arg>
+<arg>Calculate Benefits</arg>
+<arg>Key Benefits</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.977132" elapsed="0.000420"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:49.991182" level="INFO">Current page contains text 'Bajaj Life iSecure II'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.978726" elapsed="0.012620"/>
+</kw>
+<msg time="2026-01-08T22:40:49.991591" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.978454" elapsed="0.013194"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-08T22:40:49.992614" level="INFO">fail</msg>
+<arg>fail</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.992398" elapsed="0.000307"/>
+</kw>
+<arg>'$status}'=='True'</arg>
+<arg>Log</arg>
+<arg>pass</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>fail</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.991908" elapsed="0.000908"/>
+</kw>
+<var name="${t}">Bajaj Life iSecure II</var>
+<status status="PASS" start="2026-01-08T22:40:49.978263" elapsed="0.014648"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:50.010163" level="INFO">Current page contains text 'Calculate Benefits'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.993577" elapsed="0.016674"/>
+</kw>
+<msg time="2026-01-08T22:40:50.010374" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-08T22:40:49.993321" elapsed="0.017078"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-08T22:40:50.010922" level="INFO">fail</msg>
+<arg>fail</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.010804" elapsed="0.000175"/>
+</kw>
+<arg>'$status}'=='True'</arg>
+<arg>Log</arg>
+<arg>pass</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>fail</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.010542" elapsed="0.000509"/>
+</kw>
+<var name="${t}">Calculate Benefits</var>
+<status status="PASS" start="2026-01-08T22:40:49.993146" elapsed="0.017969"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:50.025662" level="INFO">Current page contains text 'Key Benefits'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.011548" elapsed="0.014189"/>
+</kw>
+<msg time="2026-01-08T22:40:50.025836" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.011385" elapsed="0.014469"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-08T22:40:50.026240" level="INFO">fail</msg>
+<arg>fail</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.026161" elapsed="0.000121"/>
+</kw>
+<arg>'$status}'=='True'</arg>
+<arg>Log</arg>
+<arg>pass</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>fail</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.025970" elapsed="0.000365"/>
+</kw>
+<var name="${t}">Key Benefits</var>
+<status status="PASS" start="2026-01-08T22:40:50.011266" elapsed="0.015117"/>
+</iter>
+<var>${t}</var>
+<value>@{text}</value>
+<status status="PASS" start="2026-01-08T22:40:49.977868" elapsed="0.048571"/>
+</for>
+<try>
+<branch type="TRY">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:50.043129" level="INFO">Current page contains text 'Key Benefits'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.026879" elapsed="0.016325"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Pass</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.043328" elapsed="0.000356"/>
+</kw>
+<status status="PASS" start="2026-01-08T22:40:50.026760" elapsed="0.017000"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log" owner="BuiltIn">
+<arg>no such element exception</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-01-08T22:40:50.043980" elapsed="0.000036"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-01-08T22:40:50.044133" elapsed="0.000585"/>
+</kw>
+<status status="NOT RUN" start="2026-01-08T22:40:50.043850" elapsed="0.000989"/>
+</branch>
+<status status="PASS" start="2026-01-08T22:40:50.026712" elapsed="0.018246"/>
+</try>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:50.072360" level="INFO">Element '//button[contains(@type,"button")]//parent::div[contains(@class,"mt-2 col-md-12")]' is displayed.</msg>
+<arg>//button[contains(@type,"button")]//parent::div[contains(@class,"mt-2 col-md-12")]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.045771" elapsed="0.026673"/>
+</kw>
+<msg time="2026-01-08T22:40:50.072647" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Element Should Be Visible</arg>
+<arg>//button[contains(@type,"button")]//parent::div[contains(@class,"mt-2 col-md-12")]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.045436" elapsed="0.027267"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-08T22:40:50.073435" level="INFO">Clicking element '//button[contains(@type,"button")]//parent::div[contains(@class,"mt-2 col-md-12")]'.</msg>
+<arg>//button[contains(@type,"button")]//parent::div[contains(@class,"mt-2 col-md-12")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.073317" elapsed="0.081919"/>
+</kw>
+<arg>${status}</arg>
+<arg>Click Element</arg>
+<arg>//button[contains(@type,"button")]//parent::div[contains(@class,"mt-2 col-md-12")]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.073155" elapsed="0.082165"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>not ${status}</arg>
+<arg>Log To Console</arg>
+<arg>no</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-08T22:40:50.155591" elapsed="0.000205"/>
+</kw>
+<status status="PASS" start="2026-01-08T22:40:42.970361" elapsed="7.185676"/>
 </test>
-<status status="PASS" start="2025-06-21T00:38:29.805193" elapsed="16.382818"/>
+<status status="PASS" start="2026-01-08T22:40:42.541290" elapsed="7.615344"/>
 </suite>
 <statistics>
 <total>
@@ -31,7 +402,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="TC1" id="s1" pass="1" fail="0" skip="0">TC1</stat>
+<stat name="Practice" id="s1" pass="1" fail="0" skip="0">Practice</stat>
 </suite>
 </statistics>
 <errors>
