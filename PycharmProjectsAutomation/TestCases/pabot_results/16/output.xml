@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:53:53.196172" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Speedtest" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\speedtest.robot">
+<test id="s1-s1-t1" name="speedtest" line="14">
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:53.384488" level="INFO">${speed} = 0 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-01-13T21:53:53.384273" elapsed="0.000249"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-13T21:53:53.384651" elapsed="0.000190"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:53:53.383580" elapsed="0.001357"/>
+</test>
+<status status="PASS" start="2026-01-13T21:53:53.222723" elapsed="0.162486"/>
+</suite>
+<status status="PASS" start="2026-01-13T21:53:53.208764" elapsed="0.179564"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Speedtest" id="s1-s1" pass="1" fail="0" skip="0">Suites.Speedtest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

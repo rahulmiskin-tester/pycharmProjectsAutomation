@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:55:23.919020" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Userkeywordswithargument" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\userkeywordswithargument.robot">
+<test id="s1-s1-t1" name="TC1" line="17">
+<kw name="Launchbrowser" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:24.091541" level="INFO">Opening browser 'chrome' to base url 'https://www.mercurytravels.co.in/flights'.</msg>
+<arg>${appurl}</arg>
+<arg>${Appbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:55:24.091336" elapsed="5.423483"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:55:29.515074" elapsed="0.026222"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:29.548738" level="INFO">${title} = Flight Booking - Book Airticket, Flight Ticket Online at Mercury Travels</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-01-13T21:55:29.541646" elapsed="0.007148"/>
+</kw>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2026-01-13T21:55:29.548881" elapsed="0.000163"/>
+</return>
+<msg time="2026-01-13T21:55:29.549308" level="INFO">${pagetitle} = Flight Booking - Book Airticket, Flight Ticket Online at Mercury Travels</msg>
+<var>${pagetitle}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2026-01-13T21:55:24.090718" elapsed="5.458640"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-13T21:55:29.549601" elapsed="0.000459"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:29.550828" level="INFO">Typing text 'Solapur' into text field '//input[@name="fromCity"]'.</msg>
+<arg>//input[@name="fromCity"]</arg>
+<arg>Solapur</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:29.550283" elapsed="0.128440"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:29.679129" level="INFO">Typing text 'pune' into text field '//input[@placeholder="Type City Name or Airport Code"]'.</msg>
+<arg>//input[@placeholder="Type City Name or Airport Code"]</arg>
+<arg>pune</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:29.678908" elapsed="0.103770"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:55:24.090260" elapsed="5.693033"/>
+</test>
+<status status="PASS" start="2026-01-13T21:55:23.941279" elapsed="5.843120"/>
+</suite>
+<status status="PASS" start="2026-01-13T21:55:23.929547" elapsed="5.856531"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Userkeywordswithargument" id="s1-s1" pass="1" fail="0" skip="0">Suites.Userkeywordswithargument</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-13T21:55:24.089183" level="WARN">Error in file 'E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\Resource\resources.robot' on line 14: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Practice                                                               
+==============================================================================
+practice                                                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\practice.robot:14
+    T:  practice    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\practice.robot:27
+      Wait Until Element Is Visible    xpath=//input[@aria-label='Date of Birth']    10s
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=//input[@aria-label='Date of Birth']' not visible after 10 seconds.
+------------------------------------------------------------------------------
+Suites.Practice                                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\pabot_results\13\output.xml

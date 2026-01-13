@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:54:26.385860" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TC2" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\TC2.ROBOT">
+<test id="s1-s1-t1" name="LoginTest" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:26.551821" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:54:26.551542" elapsed="12.827527"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:54:39.379799" elapsed="0.050897"/>
+</kw>
+<kw name="LoginIntoApplication">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:54:39.431321" elapsed="0.001904"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@placeholder='Username']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T21:54:39.433408" elapsed="1.530759"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:40.964553" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<arg>xpath=//input[@placeholder='Username']</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:40.964335" elapsed="0.060377"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:41.025207" level="INFO">Typing text 'admin123' into text field 'xpath=//input[@placeholder='Password']'.</msg>
+<arg>xpath=//input[@placeholder='Password']</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:41.024932" elapsed="0.062073"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:41.087690" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:41.087195" elapsed="0.065478"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:54:39.430969" elapsed="1.721885"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//h6[text()='Dashboard']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-13T21:54:41.153198" elapsed="3.512395"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:44.666202" level="INFO">Clicking element '//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']'.</msg>
+<arg>//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:44.665845" elapsed="0.068563"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:54:26.550799" elapsed="18.184054"/>
+</test>
+<status status="PASS" start="2026-01-13T21:54:26.406432" elapsed="18.329594"/>
+</suite>
+<status status="PASS" start="2026-01-13T21:54:26.396643" elapsed="18.407378"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="TC2" id="s1-s1" pass="1" fail="0" skip="0">Suites.TC2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Timepass                                                               
+==============================================================================
+testcase                                                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\timepass.robot:8
+    T:  testcase    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\timepass.robot:13
+      Input Text    //input[@name='fullName']    dfgh
+______________________________________________________________________________
+| FAIL |
+Element with locator '//input[@name='fullName']' not found.
+------------------------------------------------------------------------------
+Suites.Timepass                                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\pabot_results\24\output.xml

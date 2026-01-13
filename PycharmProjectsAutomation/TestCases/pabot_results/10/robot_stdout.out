@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Isecure                                                                
+==============================================================================
+testcase                                                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\isecure.robot:9
+    T:  testcase    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\isecure.robot:14
+      Input Text    //input[contains(@id,'mat-input-0')]//div[contains(@class,"mat-form-field-infix ng-tns-c15-0")]    01/01/2003
+______________________________________________________________________________
+| FAIL |
+Element with locator '//input[contains(@id,'mat-input-0')]//div[contains(@class,"mat-form-field-infix ng-tns-c15-0")]' not found.
+------------------------------------------------------------------------------
+Suites.Isecure                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\pabot_results\10\output.xml

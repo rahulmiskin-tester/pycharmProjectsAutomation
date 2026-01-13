@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:52:29.958647" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="CloseallBrowser" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\CloseallBrowser.robot">
+<test id="s1-s1-t1" name="Closeall" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:52:30.174670" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>https://demo.nopcommerce.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:52:30.174439" elapsed="2.743135"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:52:32.918477" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<arg>https://demowebshop.tricentis.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:52:32.918052" elapsed="6.758608"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-01-13T21:52:39.677709" elapsed="4.272159"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:52:30.173718" elapsed="13.776522"/>
+</test>
+<status status="PASS" start="2026-01-13T21:52:30.001477" elapsed="13.949586"/>
+</suite>
+<status status="PASS" start="2026-01-13T21:52:29.986424" elapsed="13.966931"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="CloseallBrowser" id="s1-s1" pass="1" fail="0" skip="0">Suites.CloseallBrowser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

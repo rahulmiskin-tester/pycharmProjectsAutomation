@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:55:12.705761" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Timepass" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\timepass.robot">
+<test id="s1-s1-t1" name="testcase" line="8">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-13T21:55:12.895750" elapsed="0.000515"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:12.896956" level="INFO">Opening browser 'chrome' to base url 'https://www.bajajallianzlife.com/buy-online/isecure'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:55:12.896600" elapsed="5.880555"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:18.778466" level="INFO">Typing text 'dfgh' into text field '//input[@name='fullName']'.</msg>
+<msg time="2026-01-13T21:55:28.929847" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-13T21:55:28.930306" level="FAIL">Element with locator '//input[@name='fullName']' not found.</msg>
+<arg>//input[@name='fullName']</arg>
+<arg>dfgh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-01-13T21:55:18.777706" elapsed="10.156796">Element with locator '//input[@name='fullName']' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@name='mobileNumber']</arg>
+<arg>909</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:55:28.935000" elapsed="0.000222"/>
+</kw>
+<kw name="//input[@name='dob']">
+<arg>12/02/1993</arg>
+<status status="NOT RUN" start="2026-01-13T21:55:28.935582" elapsed="0.000093"/>
+</kw>
+<kw name="//input[@name='emailId']">
+<arg>cvb</arg>
+<status status="NOT RUN" start="2026-01-13T21:55:28.935925" elapsed="0.000163"/>
+</kw>
+<status status="FAIL" start="2026-01-13T21:55:12.894385" elapsed="16.042117">Element with locator '//input[@name='fullName']' not found.</status>
+</test>
+<status status="FAIL" start="2026-01-13T21:55:12.730154" elapsed="16.208764"/>
+</suite>
+<status status="FAIL" start="2026-01-13T21:55:12.719774" elapsed="16.220254"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="Timepass" id="s1-s1" pass="0" fail="1" skip="0">Suites.Timepass</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

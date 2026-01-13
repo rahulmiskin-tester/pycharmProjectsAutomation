@@ -1,0 +1,27 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.TestCase1                                                              
+==============================================================================
+TestCase1                                                               
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\TestCase1.robot:11
+    T:  TestCase1    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\TestCase1.robot:16
+      Select gender    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\Resource\LoginKeywords.robot:18
+      Click Element    rdo_male
+______________________________________________________________________________
+| FAIL |
+Element with locator 'rdo_male' not found.
+------------------------------------------------------------------------------
+Suites.TestCase1                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\pabot_results\23\output.xml

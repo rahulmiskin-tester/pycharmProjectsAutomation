@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:55:08.439169" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TestCase1" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\TestCase1.robot">
+<test id="s1-s1-t1" name="TestCase1" line="11">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-13T21:55:08.662343" elapsed="0.000285"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:08.663072" level="INFO">Opening browser 'chrome' to base url 'https://www.bajajallianzlife.com/campaign/term-insurance-plans-premium-calculator/etouch-all-in-one-prices-term-plan.html?utm_source=google&amp;utm_medium=Google_Search-Brand&amp;utm_campaign=BALIC_Sok_Search_Term_Brand&amp;adgroupid=164855968251&amp;utm_content=691606522728&amp;utm_term=bajaj%20allianz%20life&amp;device=c&amp;gad_source=1&amp;gad_campaignid=21049166602&amp;gbraid=0AAAAADE_zWDs41-sBBnyGObk9rDpyLSus&amp;gclid=CjwKCAjwtrXFBhBiEiwAEKen17XuhDbqJk04fYtT1bU24adTm1IQrc7C30QH1Krftu_EYwvsCHUHuxoCfyIQAvD_BwE'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:55:08.662818" elapsed="6.500413"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:55:15.163543" elapsed="0.035333"/>
+</kw>
+<kw name="Fill Registration Form" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:15.201137" level="INFO">Typing text 'Rahul Miskin' into text field 'name=Name'.</msg>
+<arg>${txt_full_name}</arg>
+<arg>Rahul Miskin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:15.200349" elapsed="0.136416"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:15.337246" level="INFO">Typing text '9876543210' into text field 'name=Mobile Number'.</msg>
+<arg>${txt_MobNumber}</arg>
+<arg>9876543210</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:15.336923" elapsed="0.148718"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:15.486529" level="INFO">Typing text 'rahul@test.com' into text field 'name=Email'.</msg>
+<arg>${txt_Email}</arg>
+<arg>rahul@test.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:15.485892" elapsed="0.109885"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:15.596433" level="INFO">Typing text '2/12/2003' into text field 'id=dob'.</msg>
+<arg>${txt_dob}</arg>
+<arg>2/12/2003</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:15.596023" elapsed="0.137619"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:15.734276" level="INFO">Typing text '413002' into text field 'name=Pincode'.</msg>
+<arg>${txt_pincode}</arg>
+<arg>413002</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:15.733990" elapsed="0.117946"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:15.852588" level="INFO">Clicking element 'xpath=//button[@class='ann-sub-but']'.</msg>
+<arg>${txt_premium}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:15.852170" elapsed="0.162712"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:55:15.199272" elapsed="0.815972"/>
+</kw>
+<kw name="Select gender" owner="LoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:16.016530" level="INFO">Clicking element 'rdo_male'.</msg>
+<msg time="2026-01-13T21:55:21.277174" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-13T21:55:21.277713" level="FAIL">Element with locator 'rdo_male' not found.</msg>
+<arg>rdo_male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-01-13T21:55:16.016100" elapsed="5.266183">Element with locator 'rdo_male' not found.</status>
+</kw>
+<status status="FAIL" start="2026-01-13T21:55:16.015551" elapsed="5.267324">Element with locator 'rdo_male' not found.</status>
+</kw>
+<kw name="dropdown" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-01-13T21:55:21.283238" elapsed="0.000206"/>
+</kw>
+<kw name="closing" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-01-13T21:55:21.283658" elapsed="0.000060"/>
+</kw>
+<kw name="go to new" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-01-13T21:55:21.283859" elapsed="0.000041"/>
+</kw>
+<kw name="javascript" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-01-13T21:55:21.283982" elapsed="0.000033"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:55:21.284127" elapsed="0.000037"/>
+</kw>
+<kw name="Handle alert all" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-01-13T21:55:21.284264" elapsed="0.000033"/>
+</kw>
+<status status="FAIL" start="2026-01-13T21:55:08.661425" elapsed="12.623048">Element with locator 'rdo_male' not found.</status>
+</test>
+<status status="FAIL" start="2026-01-13T21:55:08.458798" elapsed="12.827337"/>
+</suite>
+<status status="FAIL" start="2026-01-13T21:55:08.449463" elapsed="12.837080"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="TestCase1" id="s1-s1" pass="0" fail="1" skip="0">Suites.TestCase1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-13T21:55:08.602165" level="ERROR">Error in file 'E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\TestCase1.robot' on line 3: Resource file '..\Keywords\LoginKeywords.robot' does not exist.</msg>
+</errors>
+</robot>

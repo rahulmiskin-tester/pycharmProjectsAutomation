@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:52:10.851293" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Capture" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\capture.robot">
+<test id="s1-s1-t1" name="Screenshot" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:52:11.140029" level="INFO">Opening browser 'chrome' to base url 'https://support.orangehrm.com/portal/en/signin'.</msg>
+<arg>https://support.orangehrm.com/portal/en/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:52:11.139646" elapsed="9.957343"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:52:21.097600" elapsed="0.037469"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-13T21:52:21.135385" elapsed="0.001505"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-13T21:52:23.137773" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-13T21:52:21.137127" elapsed="2.000904"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:52:25.316906" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-13T21:52:25.317186" level="FAIL">Element with locator 'img alt//[@aria-label="OrangeHRM home"]' not found.</msg>
+<arg>img alt//[@aria-label="OrangeHRM home"]</arg>
+<arg>imagei.pmg</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="FAIL" start="2026-01-13T21:52:23.138403" elapsed="2.190158">Element with locator 'img alt//[@aria-label="OrangeHRM home"]' not found.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>Rahul.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-01-13T21:52:25.328791" elapsed="0.000066"/>
+</kw>
+<status status="FAIL" start="2026-01-13T21:52:11.138858" elapsed="14.190172">Element with locator 'img alt//[@aria-label="OrangeHRM home"]' not found.</status>
+</test>
+<status status="FAIL" start="2026-01-13T21:52:10.882078" elapsed="14.448530"/>
+</suite>
+<status status="FAIL" start="2026-01-13T21:52:10.871627" elapsed="14.459571"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="Capture" id="s1-s1" pass="0" fail="1" skip="0">Suites.Capture</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

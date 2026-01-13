@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Capture                                                                
+==============================================================================
+Screenshot                                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\capture.robot:5
+    T:  Screenshot    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\capture.robot:14
+      Capture Element Screenshot    img alt//[@aria-label="OrangeHRM home"]    imagei.pmg
+______________________________________________________________________________
+| FAIL |
+Element with locator 'img alt//[@aria-label="OrangeHRM home"]' not found.
+------------------------------------------------------------------------------
+Suites.Capture                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\pabot_results\1\output.xml

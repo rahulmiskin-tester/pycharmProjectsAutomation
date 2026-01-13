@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:52:27.848424" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Capturescreen" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\capturescreen.robot">
+<test id="s1-s1-t1" name="Screenshot" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:52:28.011123" level="INFO">Opening browser 'chrome' to base url 'https://support.orangehrm.com/portal/en/signin'.</msg>
+<arg>https://support.orangehrm.com/portal/en/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:52:28.010891" elapsed="7.770205"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:52:35.781492" elapsed="0.042713"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-13T21:52:35.824717" elapsed="0.001937"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-13T21:52:37.827614" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-13T21:52:35.826922" elapsed="2.001230"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:52:37.968107" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>//img[@data-id="portal_logo"]</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2026-01-13T21:52:37.828946" elapsed="0.139443"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:52:37.969237" level="INFO">Clicking element '//label[contains(@class,"option option-1")][1]'.</msg>
+<msg time="2026-01-13T21:52:40.189988" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-13T21:52:40.190226" level="FAIL">Element with locator '//label[contains(@class,"option option-1")][1]' not found.</msg>
+<arg>//label[contains(@class,"option option-1")][1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-01-13T21:52:37.968787" elapsed="2.234647">Element with locator '//label[contains(@class,"option option-1")][1]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//label[contains(@class,'option option-2 w-100')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:52:40.204197" elapsed="0.000267"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//label[contains(@class,"option option-3 w-100")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:52:40.204839" elapsed="0.000155"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[contains(text(), ' NEXT ')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:52:40.205344" elapsed="0.000143"/>
+</kw>
+<status status="FAIL" start="2026-01-13T21:52:28.010170" elapsed="12.195895">Element with locator '//label[contains(@class,"option option-1")][1]' not found.</status>
+</test>
+<status status="FAIL" start="2026-01-13T21:52:27.868360" elapsed="12.339664"/>
+</suite>
+<status status="FAIL" start="2026-01-13T21:52:27.858665" elapsed="12.350373"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="Capturescreen" id="s1-s1" pass="0" fail="1" skip="0">Suites.Capturescreen</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

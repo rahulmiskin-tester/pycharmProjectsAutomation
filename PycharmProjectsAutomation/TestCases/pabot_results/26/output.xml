@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:55:31.555846" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Userkeywors" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\userkeywors.robot">
+<test id="s1-s1-t1" name="TC1" line="13">
+<kw name="LaunchBrowser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:31.722860" level="INFO">Opening browser 'chrome' to base url 'https://www.mercurytravels.co.in/flights'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:55:31.722646" elapsed="4.319635"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:55:36.043091" elapsed="0.044601"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:55:31.722068" elapsed="4.365879"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-13T21:55:36.088202" elapsed="0.002301"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:36.091620" level="INFO">Typing text 'Solapur' into text field '//input[@name="fromCity"]'.</msg>
+<arg>//input[@name="fromCity"]</arg>
+<arg>Solapur</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:36.090862" elapsed="0.181298"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:36.273000" level="INFO">Typing text 'pune' into text field '//input[@placeholder="Type City Name or Airport Code"]'.</msg>
+<arg>//input[@placeholder="Type City Name or Airport Code"]</arg>
+<arg>pune</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:55:36.272512" elapsed="0.206782"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:55:31.721606" elapsed="4.758328"/>
+</test>
+<status status="PASS" start="2026-01-13T21:55:31.576820" elapsed="4.904612"/>
+</suite>
+<status status="PASS" start="2026-01-13T21:55:31.566411" elapsed="4.918353"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Userkeywors" id="s1-s1" pass="1" fail="0" skip="0">Suites.Userkeywors</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

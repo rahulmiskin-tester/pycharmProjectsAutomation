@@ -1,0 +1,56 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.DDT1                                                                   
+==============================================================================
+Right user empty pass                                                 | PASS |
+------------------------------------------------------------------------------
+Right user wrong password                                             | PASS |
+------------------------------------------------------------------------------
+wrong userv right password                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\DDT1.Robot:14
+    T:  wrong userv right password    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\DDT1.Robot:14
+      Invalid Login    admin1@yourstore.com    admin
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\DDT1.Robot:23
+      Input Username    ${username}
+      |  ${username} = admin1@yourstore.com (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\Resource\login_resources.robot:23
+      Input Text    id=Email    ${username}
+      |  ${username} = admin1@yourstore.com (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'id=Email' not found.
+------------------------------------------------------------------------------
+wrong user empty password                                               
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\DDT1.Robot:15
+    T:  wrong user empty password    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\DDT1.Robot:15
+      Invalid Login    admi4n@yourstore.com    6474
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\DDT1.Robot:23
+      Input Username    ${username}
+      |  ${username} = admi4n@yourstore.com (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\Resource\login_resources.robot:23
+      Input Text    id=Email    ${username}
+      |  ${username} = admi4n@yourstore.com (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'id=Email' not found.
+------------------------------------------------------------------------------
+Suites.DDT1                                                           | FAIL |
+4 tests, 2 passed, 2 failed
+==============================================================================
+Suites                                                                | FAIL |
+4 tests, 2 passed, 2 failed
+==============================================================================
+Output:  E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\pabot_results\4\output.xml
