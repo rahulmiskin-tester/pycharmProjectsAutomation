@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:55:32.370653" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="scrollingPage" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\scrollingPage.robot">
+<test id="s1-s1-t1" name="Scrolling" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:32.533664" level="INFO">Opening browser 'chrome' to base url 'https://www.worldometers.info/geography/flags-of-the-world/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:55:32.533101" elapsed="5.213916"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:55:37.747929" elapsed="0.027876"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-13T21:55:37.775982" elapsed="0.001056"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:37.777614" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-01-13T21:55:37.777195" elapsed="0.008476"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:40.899348" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-13T21:55:40.899687" level="FAIL">Element with locator '//img[@class="w-[120px] h-[80px] object-contain"]' not found.</msg>
+<arg>//img[@class="w-[120px] h-[80px] object-contain"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2026-01-13T21:55:37.785937" elapsed="3.118395">Element with locator '//img[@class="w-[120px] h-[80px] object-contain"]' not found.</status>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-01-13T21:55:40.904806" elapsed="0.000142"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-01-13T21:55:40.905197" elapsed="0.000094"/>
+</kw>
+<status status="FAIL" start="2026-01-13T21:55:32.531668" elapsed="8.373996">Element with locator '//img[@class="w-[120px] h-[80px] object-contain"]' not found.</status>
+</test>
+<status status="FAIL" start="2026-01-13T21:55:32.390390" elapsed="8.517759"/>
+</suite>
+<status status="FAIL" start="2026-01-13T21:55:32.380858" elapsed="8.528445"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="scrollingPage" id="s1-s1" pass="0" fail="1" skip="0">Suites.scrollingPage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

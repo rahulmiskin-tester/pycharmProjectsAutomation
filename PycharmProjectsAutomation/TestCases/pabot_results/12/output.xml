@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:53:26.630957" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Navigational" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\Navigational.robot">
+<test id="s1-s1-t1" name="NavigationTest" line="10">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-13T21:53:26.830984" elapsed="0.000265"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:26.831606" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:53:26.831431" elapsed="2.820586"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:53:29.652539" elapsed="0.025460"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:29.682136" level="INFO">${loc} = https://www.google.com/</msg>
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-01-13T21:53:29.678314" elapsed="0.003872"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-13T21:53:29.682332" elapsed="0.000335"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:29.682954" level="INFO">Opening url 'https://www.bing.com/'</msg>
+<arg>https://www.bing.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:53:29.682815" elapsed="1.265540"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:30.953053" level="INFO">${loc1} = https://www.bing.com/</msg>
+<var>${loc1}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-01-13T21:53:30.948559" elapsed="0.004540"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-13T21:53:30.953236" elapsed="0.000290"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2026-01-13T21:53:30.953641" elapsed="0.018647"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:30.978211" level="INFO">${loc} = https://www.google.com/</msg>
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-01-13T21:53:30.972555" elapsed="0.005709"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>$loc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-13T21:53:30.978454" elapsed="0.000804"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:53:26.830090" elapsed="4.149710"/>
+</test>
+<status status="PASS" start="2026-01-13T21:53:26.654489" elapsed="4.326010"/>
+</suite>
+<status status="PASS" start="2026-01-13T21:53:26.643714" elapsed="4.338380"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Navigational" id="s1-s1" pass="1" fail="0" skip="0">Suites.Navigational</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

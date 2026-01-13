@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:54:42.732652" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TC3" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\TC3.robot">
+<test id="s1-s1-t1" name="LoginTest" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:42.914215" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:54:42.913949" elapsed="10.024446"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:54:52.938772" elapsed="0.060868"/>
+</kw>
+<kw name="LoginIntoApplication">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${username_input}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T21:54:53.001751" elapsed="1.199525"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:54.202130" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<arg>${username_input}</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:54.201548" elapsed="0.074612"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:54.276890" level="INFO">Typing text 'admin123' into text field 'xpath=//input[@placeholder='Password']'.</msg>
+<arg>${password_input}</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:54.276457" elapsed="0.078538"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:54.355475" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:54.355205" elapsed="0.059889"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:56.772647" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-13T21:54:54.415258" elapsed="2.357499"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:54:53.000257" elapsed="3.772662"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${dashboard_text}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-13T21:54:56.773141" elapsed="0.857038"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:57.644809" level="INFO">Element 'xpath=//h6[text()='Dashboard']' is displayed.</msg>
+<arg>${dashboard_text}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T21:54:57.630382" elapsed="0.014520"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:57.645275" level="INFO">Clicking element 'xpath=//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']'.</msg>
+<arg>${user_dropdown}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:57.645046" elapsed="0.062473"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${user_logout}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T21:54:57.707685" elapsed="0.247521"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:57.955659" level="INFO">Clicking element 'xpath=//a[normalize-space()='Logout']'.</msg>
+<arg>${user_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:57.955392" elapsed="3.095405"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${username_input}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T21:55:01.051111" elapsed="0.654883"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:01.722859" level="INFO">Element 'xpath=//input[@placeholder='Username']' is displayed.</msg>
+<arg>${username_input}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T21:55:01.706255" elapsed="0.016789"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${username_input}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-01-13T21:55:01.723353" elapsed="0.026553"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:55:01.756730" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-13T21:55:01.750163" elapsed="0.006742"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-13T21:55:01.757181" elapsed="2.176427"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:54:42.913225" elapsed="21.021035"/>
+</test>
+<status status="PASS" start="2026-01-13T21:54:42.755080" elapsed="21.180936"/>
+</suite>
+<status status="PASS" start="2026-01-13T21:54:42.744535" elapsed="21.194325"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="TC3" id="s1-s1" pass="1" fail="0" skip="0">Suites.TC3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

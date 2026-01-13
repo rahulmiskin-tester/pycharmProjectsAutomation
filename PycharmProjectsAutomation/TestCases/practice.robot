@@ -15,11 +15,25 @@ practice
         Open Browser    ${URL}      ${BROWSER}
         Maximize Browser Window
         Wait Until Page Contains Element    //input[contains(@type,"text")]     10
-        Input Text    //input[contains(@name,'Email')]    Rahul
+        Input Text    //input[contains(@name,'Email')]    Rahul     miskin
         Set Selenium Implicit Wait    10
 
-         Click Button    //button[contains(text(), ' NEXT ')]
-         Input Text    //input[contains(@name,"FullName")]   tex
+         #Click Button    //button[contains(text(), ' NEXT ')]
+         Input Text    //input[contains(@name,"FullName")]   Rahul Miskin
+         Input Text    //input[contains(@formcontrolname,"phoneNumber")]  9898989898
+         Input Text    //input[contains(@name,"Email")]   rd@gmail.com
+         Click Element    //div[contains(@class,"mt-2 mb-3 mob-pin-div")]//child::span[contains(text(),"Male")]
+
+         Wait Until Element Is Visible    xpath=//input[@aria-label='Date of Birth']    10s
+         Clear Element Text              xpath=//input[@aria-label='Date of Birth']
+         Input Text                      xpath=//input[@aria-label='Date of Birth']    08/01/2008
+
+
+        Execute Javascript    window.scrollBy(0,500)
+            Click Button    xpath=//button[contains(@class,'headBtn next-btn')]
+
+
+
 
          Click Element    //label[contains(@class,"option option-1")][1]
 
@@ -69,6 +83,13 @@ practice
             ${status}=  Run Keyword And Return Status   Element Should Be Visible   //button[contains(@type,"button")]//parent::div[contains(@class,"mt-2 col-md-12")]
             Run Keyword If    ${status}   Click Element    //button[contains(@type,"button")]//parent::div[contains(@class,"mt-2 col-md-12")]
             Run Keyword If    not ${status}   Log To Console     no
+            
+            Select From List By Label    //select[contains(@name,"education")]
+
+
+
+
+      
 
 
 

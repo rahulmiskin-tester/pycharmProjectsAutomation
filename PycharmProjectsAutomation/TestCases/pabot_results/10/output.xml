@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:53:12.187433" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Isecure" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\isecure.robot">
+<test id="s1-s1-t1" name="testcase" line="9">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-13T21:53:12.415792" elapsed="0.000295"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:12.416516" level="INFO">Opening browser 'chrome' to base url ''.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:53:12.416268" elapsed="1.354733"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:53:13.771162" elapsed="0.036540"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:13.808221" level="INFO">Typing text '01/01/2003' into text field '//input[contains(@id,'mat-input-0')]//div[contains(@class,"mat-form-field-infix ng-tns-c15-0")]'.</msg>
+<msg time="2026-01-13T21:53:24.014254" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-13T21:53:24.014510" level="FAIL">Element with locator '//input[contains(@id,'mat-input-0')]//div[contains(@class,"mat-form-field-infix ng-tns-c15-0")]' not found.</msg>
+<arg>//input[contains(@id,'mat-input-0')]//div[contains(@class,"mat-form-field-infix ng-tns-c15-0")]</arg>
+<arg>01/01/2003</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-01-13T21:53:13.807864" elapsed="10.211767">Element with locator '//input[contains(@id,'mat-input-0')]//div[contains(@class,"mat-form-field-infix ng-tns-c15-0")]' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[contains(@name,'FullName')]</arg>
+<arg>text</arg>
+<arg>baju</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:53:24.020054" elapsed="0.000119"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-01-13T21:53:24.020355" elapsed="0.000073"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@name="phoneNumber"]</arg>
+<arg>9028940627</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:53:24.020580" elapsed="0.000064"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[contains(@class,"cst-input ng-untouched ng-pristine ng-invalid ng-star-inserted")]</arg>
+<arg>rd@gmial.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:53:24.020879" elapsed="0.000158"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//label[contains(.,'Male')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:53:24.021324" elapsed="0.000136"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//label[contains(@class,"option option-2")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:53:24.021608" elapsed="0.000300"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(.,' NEXT ')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-01-13T21:53:24.022096" elapsed="0.000067"/>
+</kw>
+<kw name="vbnm">
+<status status="NOT RUN" start="2026-01-13T21:53:24.022396" elapsed="0.000079"/>
+</kw>
+<status status="FAIL" start="2026-01-13T21:53:12.414959" elapsed="11.607782">Element with locator '//input[contains(@id,'mat-input-0')]//div[contains(@class,"mat-form-field-infix ng-tns-c15-0")]' not found.</status>
+</test>
+<status status="FAIL" start="2026-01-13T21:53:12.216159" elapsed="11.807995"/>
+</suite>
+<status status="FAIL" start="2026-01-13T21:53:12.204770" elapsed="11.819832"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="Isecure" id="s1-s1" pass="0" fail="1" skip="0">Suites.Isecure</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

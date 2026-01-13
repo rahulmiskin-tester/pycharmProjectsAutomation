@@ -1,0 +1,44 @@
+--name Suites
+--suite Suites.TC1
+--variable CALLER_ID:94226c4daee640fbbcf5c087ba1247b9
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:2
+--variable PABOTQUEUEINDEX:18
+--variable PABOTLASTLEVEL:Suites.TC1
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\18
+--consolecolors off
+--consolemarkers off
+Alerts.robot
+CloseallBrowser.robot
+DDT1.Robot
+Forloop.robot
+Getalllinks.robot
+Navigational.robot
+Project.robot
+TC1.robot
+TC2.ROBOT
+TC3.robot
+TabbedWindows.robot
+TestCase1.robot
+capture.robot
+capturescreen.robot
+dd2excel.robot
+dropdown.robot
+frames.robot
+isecure.robot
+mouseoperations.robot
+practice.robot
+radio.robot
+scrollingPage.robot
+speedtest.robot
+swithbrowser.robot
+tabledemo.robot
+timepass.robot
+userkeywordswithargument.robot
+userkeywors.robot

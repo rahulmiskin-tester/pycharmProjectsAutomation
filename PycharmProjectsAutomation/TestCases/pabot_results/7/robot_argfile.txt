@@ -1,0 +1,44 @@
+--name Suites
+--suite Suites.Forloop
+--variable CALLER_ID:44fbcc03a9e141c795cc313e44049668
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:2
+--variable PABOTQUEUEINDEX:7
+--variable PABOTLASTLEVEL:Suites.Forloop
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\7
+--consolecolors off
+--consolemarkers off
+Alerts.robot
+CloseallBrowser.robot
+DDT1.Robot
+Forloop.robot
+Getalllinks.robot
+Navigational.robot
+Project.robot
+TC1.robot
+TC2.ROBOT
+TC3.robot
+TabbedWindows.robot
+TestCase1.robot
+capture.robot
+capturescreen.robot
+dd2excel.robot
+dropdown.robot
+frames.robot
+isecure.robot
+mouseoperations.robot
+practice.robot
+radio.robot
+scrollingPage.robot
+speedtest.robot
+swithbrowser.robot
+tabledemo.robot
+timepass.robot
+userkeywordswithargument.robot
+userkeywors.robot

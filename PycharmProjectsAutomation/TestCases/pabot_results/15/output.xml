@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:53:46.465164" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Radio" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\radio.robot">
+<test id="s1-s1-t1" name="Login" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:46.636372" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:53:46.636116" elapsed="8.608787"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:53:55.245177" elapsed="0.024754"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-01-13T21:53:55.270434" elapsed="0.000573"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:55.271837" level="INFO">Selecting 'radio2' from radio button 'radioButton'.</msg>
+<arg>radioButton</arg>
+<arg>radio2</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-01-13T21:53:55.271516" elapsed="6.180054"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:01.452101" level="INFO">Selecting 'radio1' from radio button 'radioButton'.</msg>
+<arg>radioButton</arg>
+<arg>radio1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-01-13T21:54:01.451865" elapsed="6.112497"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:07.565205" level="INFO">Selecting checkbox 'checkBoxOption1'.</msg>
+<arg>checkBoxOption1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:07.564647" elapsed="8.130682"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:15.695857" level="INFO">Selecting checkbox 'checkBoxOption3'.</msg>
+<arg>checkBoxOption3</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:15.695577" elapsed="8.160257"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:23.856422" level="INFO">Unselecting checkbox 'checkBoxOption3'.</msg>
+<arg>checkBoxOption3</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:23.856144" elapsed="8.144179"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:54:32.001314" level="INFO">Selecting checkbox 'option2'.</msg>
+<arg>option2</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T21:54:32.000755" elapsed="8.162282"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:53:46.635419" elapsed="53.528127"/>
+</test>
+<status status="PASS" start="2026-01-13T21:53:46.485208" elapsed="53.679646"/>
+</suite>
+<status status="PASS" start="2026-01-13T21:53:46.475651" elapsed="53.692030"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Radio" id="s1-s1" pass="1" fail="0" skip="0">Suites.Radio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

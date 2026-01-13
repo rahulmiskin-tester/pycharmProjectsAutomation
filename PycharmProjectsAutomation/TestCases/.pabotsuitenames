@@ -1,0 +1,32 @@
+datasources:0a2445d471f35c31047a0f91d3711a1bfeef81a9
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:e061652c1705c165ffacbb28d4573042d8b4ead5
+--suite Suites.Alerts
+--suite Suites.Capture
+--suite Suites.Capturescreen
+--suite Suites.CloseallBrowser
+--suite Suites.DDT1
+--suite Suites.Dd2Excel
+--suite Suites.Dropdown
+--suite Suites.Forloop
+--suite Suites.Frames
+--suite Suites.Getalllinks
+--suite Suites.Isecure
+--suite Suites.Mouseoperations
+--suite Suites.Navigational
+--suite Suites.Practice
+--suite Suites.Project
+--suite Suites.Radio
+--suite Suites.Speedtest
+--suite Suites.Swithbrowser
+--suite Suites.TC1
+--suite Suites.TC2
+--suite Suites.TC3
+--suite Suites.TabbedWindows
+--suite Suites.Tabledemo
+--suite Suites.TestCase1
+--suite Suites.Timepass
+--suite Suites.Userkeywordswithargument
+--suite Suites.Userkeywors
+--suite Suites.scrollingPage

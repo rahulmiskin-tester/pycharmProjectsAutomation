@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:52:52.513144" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Dd2Excel" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\dd2excel.robot">
+<kw name="open my browser" owner="login_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:52:52.684057" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:52:52.683811" elapsed="2.496496"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:52:55.180536" elapsed="0.032493"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:52:52.683240" elapsed="2.529954"/>
+</kw>
+<test id="s1-s1-t1" name="Login Test With Excel" line="11">
+<kw name="Invalid Login">
+<msg time="2026-01-13T21:52:55.214509" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2026-01-13T21:52:55.213828" elapsed="0.000732">Variable '${username}' not found.</status>
+</kw>
+<status status="FAIL" start="2026-01-13T21:52:55.213304" elapsed="0.002175">Variable '${username}' not found.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-13T21:52:55.218187" elapsed="2.135405"/>
+</kw>
+<status status="FAIL" start="2026-01-13T21:52:52.533417" elapsed="4.820398"/>
+</suite>
+<status status="FAIL" start="2026-01-13T21:52:52.523788" elapsed="4.831034"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="Dd2Excel" id="s1-s1" pass="0" fail="1" skip="0">Suites.Dd2Excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-13T21:52:52.680385" level="ERROR">Error in file 'E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\dd2excel.robot' on line 3: Importing library 'Datadriver' failed: ModuleNotFoundError: No module named 'Datadriver'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Admin\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\Admin\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\Admin\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Admin\AppData\Local\Programs\Python\Python313
+  C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+</errors>
+</robot>

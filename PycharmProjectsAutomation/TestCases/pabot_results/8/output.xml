@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T21:53:02.396654" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Frames" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\frames.robot">
+<test id="s1-s1-t1" name="Handle Frames In JavaDocs" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:02.579545" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/nested_frames'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-13T21:53:02.579280" elapsed="3.640308"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-13T21:53:06.219843" elapsed="0.021480"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-01-13T21:53:06.241504" elapsed="0.001694"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:06.243997" level="INFO">Selecting frame '//frame[@name="frame-top"]'.</msg>
+<arg>//frame[@name="frame-top"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2026-01-13T21:53:06.243434" elapsed="0.040653"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2026-01-13T21:53:06.284247" elapsed="0.001771"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-13T21:53:08.287233" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-13T21:53:06.286163" elapsed="2.001320"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2026-01-13T21:53:08.288516" level="INFO">Selecting frame '//frame[@name="frame-bottom"]'.</msg>
+<arg>//frame[@name="frame-bottom"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2026-01-13T21:53:08.287937" elapsed="0.048360"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2026-01-13T21:53:08.336650" elapsed="0.003280"/>
+</kw>
+<status status="PASS" start="2026-01-13T21:53:02.578540" elapsed="5.761736"/>
+</test>
+<status status="PASS" start="2026-01-13T21:53:02.418654" elapsed="5.922584"/>
+</suite>
+<status status="PASS" start="2026-01-13T21:53:02.408189" elapsed="5.935456"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Frames" id="s1-s1" pass="1" fail="0" skip="0">Suites.Frames</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
