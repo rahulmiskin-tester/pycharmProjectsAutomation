@@ -1,0 +1,40 @@
+1769101552413	geckodriver	INFO	Listening on 127.0.0.1:60160
+1769101555516	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60161" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofile6RpW6y"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1769101556093	Marionette	INFO	Marionette enabled
+1769101556262	Marionette	INFO	Listening on port 60170
+WebDriver BiDi listening on ws://127.0.0.1:60161
+Read port: 60170
+1769101556446	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.policybazaar.com/OE-PnaImo-FC4Zq8Utft/5ta3rfihJah1GrVO/HgAzLVlZ/QRc2F/1APSFQB, line 1: unreachable code after return statement
+JavaScript warning: https://www.policybazaar.com/OE-PnaImo-FC4Zq8Utft/5ta3rfihJah1GrVO/HgAzLVlZ/QRc2F/1APSFQB, line 1: unreachable code after return statement
+JavaScript warning: https://www.policybazaar.com/OE-PnaImo-FC4Zq8Utft/mca3rfihJa/ICc3LVlZ/SHZRc/kQJDz0D?v=e81b8975-464f-21de-b613-a8e2615c17c5, line 1: unreachable code after return statement
+JavaScript warning: https://www.policybazaar.com/OE-PnaImo-FC4Zq8Utft/5ta3rfihJah1GrVO/HgAzLVlZ/QRc2F/1APSFQB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/OE-PnaImo-FC4Zq8Utft/5ta3rfihJah1GrVO/HgAzLVlZ/QRc2F/1APSFQB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/OE-PnaImo-FC4Zq8Utft/5ta3rfihJah1GrVO/HgAzLVlZ/QRc2F/1APSFQB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/OE-PnaImo-FC4Zq8Utft/5ta3rfihJah1GrVO/HgAzLVlZ/QRc2F/1APSFQB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/OE-PnaImo-FC4Zq8Utft/mca3rfihJa/ICc3LVlZ/SHZRc/kQJDz0D?v=e81b8975-464f-21de-b613-a8e2615c17c5, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/OE-PnaImo-FC4Zq8Utft/mca3rfihJa/ICc3LVlZ/SHZRc/kQJDz0D?v=e81b8975-464f-21de-b613-a8e2615c17c5, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: unreachable code after return statement
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: unreachable code after return statement
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/cSzEfrY7/BDlLcw/bGk6L/x49aiwD?v=e81b8975-464f-21de-b613-a8e2615c17c5, line 1: unreachable code after return statement
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: unreachable code after return statement
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: unreachable code after return statement
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/cSzEfrY7/BDlLcw/bGk6L/x49aiwD?v=e81b8975-464f-21de-b613-a8e2615c17c5, line 1: unreachable code after return statement
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/wYzEfrY7Ya3QV6/VElEcw/SFRBf/jNLNHMB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/cSzEfrY7/BDlLcw/bGk6L/x49aiwD?v=e81b8975-464f-21de-b613-a8e2615c17c5, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://myaccount.policybazaar.com/32SnEW/yuI/fR4/F9tGYQ/cSzEfrY7/BDlLcw/bGk6L/x49aiwD?v=e81b8975-464f-21de-b613-a8e2615c17c5, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: (new TypeError(" is not a valid URL.", "resource://gre/modules/NetworkGeolocationProvider.sys.mjs", 393))
+console.error: (new TypeError(" is not a valid URL.", "resource://gre/modules/NetworkGeolocationProvider.sys.mjs", 393))
+console.error: (new TypeError(" is not a valid URL.", "resource://gre/modules/NetworkGeolocationProvider.sys.mjs", 393))
+1769101762405	FirefoxAccounts	ERROR	FxA rejecting with error NO_ACCOUNT, details: undefined
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://myaccount.policybazaar.com/Login/Admin?source=homepage&k=policies&utm_content=home_v10" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]

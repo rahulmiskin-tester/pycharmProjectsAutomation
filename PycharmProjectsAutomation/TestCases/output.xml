@@ -1,140 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-13T23:41:44.832477" rpa="false" schemaversion="5">
-<suite id="s1" name="Practice" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\practice.robot">
-<test id="s1-t1" name="practice" line="14">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-01-22T23:49:30.645865" rpa="false" schemaversion="5">
+<suite id="s1" name="Policybazar" source="E:\Bajajlife\pycharmProjectsAutomation\PycharmProjectsAutomation\TestCases\policybazar.robot">
+<test id="s1-t1" name="TC1" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:45.011589" level="INFO">Opening browser 'chrome' to base url 'https://www.bajajlifeinsurance.com/buy-online/isecure'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
+<msg time="2026-01-22T23:49:31.770224" level="INFO">Opening browser 'chrome' to base url 'https://www.policybazaar.com'.</msg>
+<arg>https://www.policybazaar.com</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-01-13T23:41:45.011364" elapsed="4.500460"/>
+<status status="PASS" start="2026-01-22T23:49:31.764746" elapsed="11.363197"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-01-13T23:41:49.512212" elapsed="0.041472"/>
+<status status="PASS" start="2026-01-22T23:49:43.144017" elapsed="0.650643"/>
 </kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//input[contains(@type,"text")]</arg>
-<arg>10</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-01-13T23:41:49.554058" elapsed="0.016091"/>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-22T23:49:43.801491" level="INFO">@{PRODUCTS} = [ Term Life Insurance | Health Insurance | Investment Plans | Car Insurance | 2 Wheeler Insurance | Family Health Insurance | Travel Insurance ]</msg>
+<var>@{PRODUCTS}</var>
+<arg>Term Life Insurance</arg>
+<arg>Health Insurance</arg>
+<arg>Investment Plans</arg>
+<arg>Car Insurance</arg>
+<arg>2 Wheeler Insurance</arg>
+<arg>Family Health Insurance</arg>
+<arg>Travel Insurance</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-22T23:49:43.798365" elapsed="0.003430"/>
 </kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>10</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2026-01-13T23:41:49.570521" elapsed="0.001217"/>
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-22T23:49:44.726799" level="INFO">Current page contains text 'Term Life Insurance'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-22T23:49:43.805131" elapsed="0.922116"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:49.572263" level="INFO">Typing text 'Rahul Miskin' into text field '//input[contains(@name,"FullName")]'.</msg>
-<arg>//input[contains(@name,"FullName")]</arg>
-<arg>Rahul Miskin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:49.572048" elapsed="0.187287"/>
+<msg time="2026-01-22T23:49:44.728380" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-22T23:49:43.804481" elapsed="0.923996"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:49.760315" level="INFO">Typing text '9898989898' into text field '//input[contains(@formcontrolname,"phoneNumber")]'.</msg>
-<arg>//input[contains(@formcontrolname,"phoneNumber")]</arg>
-<arg>9898989898</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:49.759874" elapsed="0.104772"/>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T23:49:44.730943" level="INFO">Term Life Insurance found</msg>
+<arg>${t} found</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T23:49:44.730397" elapsed="0.000687"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:49.865591" level="INFO">Typing text 'rd@gmail.com' into text field '//input[contains(@name,"Email")]'.</msg>
-<arg>//input[contains(@name,"Email")]</arg>
-<arg>rd@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:49.865154" elapsed="0.104145"/>
+<arg>'${status}'=='True'</arg>
+<arg>Log</arg>
+<arg>${t} found</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>${t} not found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-22T23:49:44.729103" elapsed="0.002161"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:49.969875" level="INFO">Clicking element '//div[contains(@class,"mt-2 mb-3 mob-pin-div")]//child::span[contains(text(),"Male")]'.</msg>
-<arg>//div[contains(@class,"mt-2 mb-3 mob-pin-div")]//child::span[contains(text(),"Male")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:49.969676" elapsed="0.068418"/>
+<var name="${t}">Term Life Insurance</var>
+<status status="PASS" start="2026-01-22T23:49:43.803079" elapsed="0.928342"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-22T23:49:44.913235" level="INFO">Current page contains text 'Health Insurance'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-22T23:49:44.732469" elapsed="0.181068"/>
+</kw>
+<msg time="2026-01-22T23:49:44.913867" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-22T23:49:44.732110" elapsed="0.181837"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T23:49:44.924689" level="INFO">Health Insurance found</msg>
+<arg>${t} found</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T23:49:44.916406" elapsed="0.010402"/>
+</kw>
+<arg>'${status}'=='True'</arg>
+<arg>Log</arg>
+<arg>${t} found</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>${t} not found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-22T23:49:44.915067" elapsed="0.014617"/>
+</kw>
+<var name="${t}">Health Insurance</var>
+<status status="PASS" start="2026-01-22T23:49:44.731834" elapsed="0.198148"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-22T23:49:45.160903" level="INFO">Current page contains text 'Investment Plans'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-22T23:49:44.940626" elapsed="0.220589"/>
+</kw>
+<msg time="2026-01-22T23:49:45.161587" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-22T23:49:44.936570" elapsed="0.225114"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T23:49:45.163514" level="INFO">Investment Plans found</msg>
+<arg>${t} found</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.162996" elapsed="0.000698"/>
+</kw>
+<arg>'${status}'=='True'</arg>
+<arg>Log</arg>
+<arg>${t} found</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>${t} not found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.162173" elapsed="0.001770"/>
+</kw>
+<var name="${t}">Investment Plans</var>
+<status status="PASS" start="2026-01-22T23:49:44.930451" elapsed="0.233717"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-22T23:49:45.382764" level="INFO">Current page contains text 'Car Insurance'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.173098" elapsed="0.211630"/>
+</kw>
+<msg time="2026-01-22T23:49:45.385593" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.170927" elapsed="0.214779"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T23:49:45.393986" level="INFO">Car Insurance found</msg>
+<arg>${t} found</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.393174" elapsed="0.001128"/>
+</kw>
+<arg>'${status}'=='True'</arg>
+<arg>Log</arg>
+<arg>${t} found</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>${t} not found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.390995" elapsed="0.004157"/>
+</kw>
+<var name="${t}">Car Insurance</var>
+<status status="PASS" start="2026-01-22T23:49:45.164616" elapsed="0.230995"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-22T23:49:45.747858" level="INFO">Current page contains text '2 Wheeler Insurance'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.398770" elapsed="0.354510"/>
+</kw>
+<msg time="2026-01-22T23:49:45.754045" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.396749" elapsed="0.357506"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T23:49:45.817958" level="INFO">2 Wheeler Insurance found</msg>
+<arg>${t} found</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.812993" elapsed="0.005159"/>
+</kw>
+<arg>'${status}'=='True'</arg>
+<arg>Log</arg>
+<arg>${t} found</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>${t} not found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.778575" elapsed="0.040025"/>
+</kw>
+<var name="${t}">2 Wheeler Insurance</var>
+<status status="PASS" start="2026-01-22T23:49:45.396311" elapsed="0.423820"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-22T23:49:46.219161" level="INFO">Current page contains text 'Family Health Insurance'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.821828" elapsed="0.397720"/>
+</kw>
+<msg time="2026-01-22T23:49:46.219922" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-22T23:49:45.821338" elapsed="0.398672"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T23:49:46.260250" level="INFO">Family Health Insurance found</msg>
+<arg>${t} found</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T23:49:46.222163" elapsed="0.041706"/>
+</kw>
+<arg>'${status}'=='True'</arg>
+<arg>Log</arg>
+<arg>${t} found</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>${t} not found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-22T23:49:46.220608" elapsed="0.053299"/>
+</kw>
+<var name="${t}">Family Health Insurance</var>
+<status status="PASS" start="2026-01-22T23:49:45.820705" elapsed="0.476465"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-22T23:49:46.697071" level="INFO">Current page contains text 'Travel Insurance'.</msg>
+<arg>${t}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-22T23:49:46.318308" elapsed="0.379222"/>
+</kw>
+<msg time="2026-01-22T23:49:46.697893" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>${t}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-22T23:49:46.304316" elapsed="0.393649"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T23:49:46.699575" level="INFO">Travel Insurance found</msg>
+<arg>${t} found</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T23:49:46.699189" elapsed="0.000563"/>
+</kw>
+<arg>'${status}'=='True'</arg>
+<arg>Log</arg>
+<arg>${t} found</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>${t} not found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-22T23:49:46.698413" elapsed="0.002035"/>
+</kw>
+<var name="${t}">Travel Insurance</var>
+<status status="PASS" start="2026-01-22T23:49:46.303384" elapsed="0.398147"/>
+</iter>
+<var>${t}</var>
+<value>@{PRODUCTS}</value>
+<status status="PASS" start="2026-01-22T23:49:43.802349" elapsed="2.899715"/>
+</for>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-22T23:49:46.901432" level="INFO">Page title is 'Insurance - Compare &amp; Buy Insurance Plans - Health, Term, Life, Car, Bike, Investment'.</msg>
+<arg>Insurance - Compare &amp; Buy Insurance Plans - Health, Term, Life, Car, Bike, Investment</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-22T23:49:46.740743" elapsed="0.161029"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//input[contains(@id,'mat-input-0')]</arg>
-<arg>10s</arg>
+<arg>//img[contains(@alt,"term insurance icon")]</arg>
+<arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-01-13T23:41:50.038377" elapsed="0.051326"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>//input[contains(@id,'mat-input-0')]</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:50.090033" elapsed="0.032895"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:50.123410" level="INFO">Typing text '08/01/2008' into text field '//input[contains(@id,'mat-input-0')]'.</msg>
-<arg>//input[contains(@id,'mat-input-0')]</arg>
-<arg>08/01/2008</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:50.123230" elapsed="0.088784"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:50.218066" level="INFO">Executing JavaScript:
-window.scrollBy(0,500)
-Without any arguments.</msg>
-<arg>window.scrollBy(0,500)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-01-13T23:41:50.217436" elapsed="0.018434"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:50.236364" level="INFO">Clicking button 'xpath=//button[contains(@class,'headBtn next-btn')]'.</msg>
-<arg>xpath=//button[contains(@class,'headBtn next-btn')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:50.236173" elapsed="0.083845"/>
-</kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:50.320505" level="INFO">Selecting options from selection list '//select[contains(@name,"education")]' by label HSC.</msg>
-<arg>//select[contains(@name,"education")]</arg>
-<arg>HSC</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2026-01-13T23:41:50.320322" elapsed="0.882413"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//select[contains(@name,"education")]</arg>
-<arg>10</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-01-13T23:41:51.203131" elapsed="0.009464"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>10</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2026-01-13T23:41:51.213106" elapsed="0.001973"/>
-</kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:51.215468" level="INFO">Selecting options from selection list '//select[contains(@formcontrolname,"occupation")]' by label Professional.</msg>
-<arg>//select[contains(@formcontrolname,"occupation")]</arg>
-<arg>Professional</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2026-01-13T23:41:51.215307" elapsed="0.071041"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:51.286825" level="INFO">Typing text '2000000' into text field '//input[contains(@type,"number" )]'.</msg>
-<arg>//input[contains(@type,"number" )]</arg>
-<arg>2000000</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:51.286660" elapsed="0.095491"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:51.382772" level="INFO">Typing text '413005' into text field '//input[contains(@type,"Number")]'.</msg>
-<arg>//input[contains(@type,"Number")]</arg>
-<arg>413005</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:51.382504" elapsed="0.070425"/>
+<status status="PASS" start="2026-01-22T23:49:46.913284" elapsed="0.308500"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-01-13T23:41:51.453415" level="INFO">Clicking element '//button[contains(@type,"button")]'.</msg>
-<arg>//button[contains(@type,"button")]</arg>
+<msg time="2026-01-22T23:49:47.224700" level="INFO">Clicking element '//img[contains(@alt,"term insurance icon")]'.</msg>
+<arg>//img[contains(@alt,"term insurance icon")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-13T23:41:51.453243" elapsed="0.081034"/>
+<status status="PASS" start="2026-01-22T23:49:47.223498" elapsed="4.189770"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-13T23:41:51.534584" elapsed="2.132996"/>
-</kw>
-<status status="PASS" start="2026-01-13T23:41:45.010422" elapsed="8.657909"/>
+<status status="PASS" start="2026-01-22T23:49:31.760259" elapsed="19.656184"/>
 </test>
-<status status="PASS" start="2026-01-13T23:41:44.833609" elapsed="8.836774"/>
+<status status="PASS" start="2026-01-22T23:49:30.650550" elapsed="20.811549"/>
 </suite>
 <statistics>
 <total>
@@ -143,7 +298,7 @@ Without any arguments.</msg>
 <tag>
 </tag>
 <suite>
-<stat name="Practice" id="s1" pass="1" fail="0" skip="0">Practice</stat>
+<stat name="Policybazar" id="s1" pass="1" fail="0" skip="0">Policybazar</stat>
 </suite>
 </statistics>
 <errors>

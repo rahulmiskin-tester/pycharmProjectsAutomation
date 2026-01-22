@@ -1,0 +1,30 @@
+1769020617621	geckodriver	INFO	Listening on 127.0.0.1:49675
+1769020620721	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49676" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofiletD5VE8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1769020620978	Marionette	INFO	Marionette enabled
+1769020621068	Marionette	INFO	Listening on port 51458
+WebDriver BiDi listening on ws://127.0.0.1:49676
+Read port: 51458
+1769020621186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/az3uh2Q5utf1hpuc/ZHE1PQ/DzoMIQ5h/M3YB, line 1: unreachable code after return statement
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/az3uh2Q5utf1hpuc/ZHE1PQ/DzoMIQ5h/M3YB, line 1: unreachable code after return statement
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/rf3uh2Q5ut/Si86PQ/TXpjbB4N/S3gD?v=cfbd41cb-dedb-da71-cbfc-9a02a3dc17df, line 1: unreachable code after return statement
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/rf3uh2Q5ut/Si86PQ/TXpjbB4N/S3gD?v=cfbd41cb-dedb-da71-cbfc-9a02a3dc17df, line 1: unreachable code after return statement
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/az3uh2Q5utf1hpuc/ZHE1PQ/DzoMIQ5h/M3YB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/az3uh2Q5utf1hpuc/ZHE1PQ/DzoMIQ5h/M3YB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/az3uh2Q5utf1hpuc/ZHE1PQ/DzoMIQ5h/M3YB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/az3uh2Q5utf1hpuc/ZHE1PQ/DzoMIQ5h/M3YB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/rf3uh2Q5ut/Si86PQ/TXpjbB4N/S3gD?v=cfbd41cb-dedb-da71-cbfc-9a02a3dc17df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.policybazaar.com/TqsBSt-24/r/0/yupmSE76Yp9doZcE/rf3uh2Q5ut/Si86PQ/TXpjbB4N/S3gD?v=cfbd41cb-dedb-da71-cbfc-9a02a3dc17df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-V0SMB0C7GT&cx=c&gtm=4e61k1, line 905: Script terminated by timeout at:
+k.xj@https://www.googletagmanager.com/gtag/js?id=G-V0SMB0C7GT&cx=c&gtm=4e61k1:905:30
+get@https://www.googletagmanager.com/gtag/js?id=G-V0SMB0C7GT&cx=c&gtm=4e61k1:903:119
+stop@https://www.googletagmanager.com/gtag/js?id=G-V0SMB0C7GT&cx=c&gtm=4e61k1:903:87
+k.Mp/c/<@https://www.googletagmanager.com/gtag/js?id=G-V0SMB0C7GT&cx=c&gtm=4e61k1:903:410
+
+1769020661170	Marionette	INFO	Stopped listening on port 51458
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: can't access property "isChromeWindow", aWindow is null
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.

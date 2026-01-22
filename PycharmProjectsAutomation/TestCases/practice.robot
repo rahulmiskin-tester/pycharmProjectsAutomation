@@ -31,7 +31,7 @@ practice
 
 
         Execute Javascript    window.scrollBy(0,500)
-            Click Button    xpath=//button[contains(@class,'headBtn next-btn')]
+           # Click Button    xpath=//button[contains(@class,'headBtn next-btn')]
 #            TRY
 #             Element Should Be Enabled    //button[contains(@type"button")]//parent::div[contains(@class,"mt-2 col-md-12")]
 #
@@ -87,18 +87,32 @@ practice
 #            Run Keyword If    not ${status}   Log To Console     no
 #
 #
-                Select From List By Label    //select[contains(@name,"education")]         HSC
+#                Select From List By Label    //select[contains(@name,"education")]         HSC
+#
+#
+#            Wait Until Page Contains Element     //select[contains(@name,"education")]      10
+#            Set Selenium Implicit Wait    10
+#            Select From List By Label    //select[contains(@formcontrolname,"occupation")]       Professional
+#            Input Text    //input[contains(@type,"number" )]   2000000
+#            Input Text    //input[contains(@type,"Number")]    413005
+#            Click Element    //button[contains(@type,"button")]
+#           # Execute Javascript   window.scrollBy(0,500)
+#            Scroll Element Into View    //p[normalize-space()='Life Insurance']/following-sibling::a[contains(text(),'Term Insurance')]
+#              Click Element               //p[normalize-space()='Life Insurance']/following-sibling::a[contains(text(),'Term Insurance')]
+#              Wait Until Element Is Visible      //form[contains(@class,"clpnri_lead_section formObj")]//child::label[contains(text(),"Full Name")]        10
+#              Input Text               //form[contains(@class,"clpnri_lead_section formObj")]//child::label[contains(text(),"Full Name")]                    Raju  singh
+#               Input Text    //form[contains(@class,"clpnri_lead_section formObj")]//child::label[contains(text(),"Date Of Birth")]    01/01/2007
 
+#            Wait Until Keyword Succeeds    30    0.5    Click Element    //input[contains(@type,"checkbox")]
+           # Wait Until Element Is Visible       //input[contains(@type,"checkbox")]
+            Click Element    //button[contains(text()," NEXT ")]
+            Wait Until Element Is Visible     //select[contains(@name,"education")]   10
+            Select From List By Label    //select[contains(@name,"education")]    Graduation
+            Select From List By Label    //select[contains(@name,"occupation")]    Self Employed
+            Input Text        //input[contains(@type,"number")]         1500000
+            Input Text    //input[contains(@type,"Number")]    411002
+            Click Element   //button[contains(@type,"button")]//parent::div[contains(@class,"col-md-12")]
 
-            Wait Until Page Contains Element     //select[contains(@name,"education")]      10
-            Set Selenium Implicit Wait    10
-            Select From List By Label    //select[contains(@formcontrolname,"occupation")]       Professional
-            Input Text    //input[contains(@type,"number" )]   2000000
-            Input Text    //input[contains(@type,"Number")]    413005
-            Click Element    //button[contains(@type,"button")]
-
-
-            Close Browser
 
 
 
