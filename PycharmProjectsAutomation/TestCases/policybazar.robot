@@ -12,7 +12,7 @@ ${BROWSER}      chrome
 
 
 TC1
-    Open Browser    https://www.policybazaar.com     chrome
+        Open Browser    https://www.policybazaar.com     chrome
     Maximize Browser Window
 
     @{PRODUCTS}=    Create List
@@ -33,6 +33,9 @@ TC1
     Title Should Be    Insurance - Compare & Buy Insurance Plans - Health, Term, Life, Car, Bike, Investment
     Wait Until Element Is Visible    //img[contains(@alt,"term insurance icon")]        5
     Click Element    //img[contains(@alt,"term insurance icon")]
+    yuiop
+
+
 
         
 
